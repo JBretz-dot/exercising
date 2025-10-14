@@ -1,1 +1,33 @@
-Lalalala
+pub(crate) fn main() {
+
+    fn fah_to_c(x:f64) -> f64{
+        (x - 32.0)* (5.0/9.0)
+    }
+
+    fn c_to_fah(x:f64) -> f64{
+        (x * 5.0/9.0) + 32.0
+    }
+
+    println!("100 F is equal to {:?} C", fah_to_c(100.0))
+
+     fn nth_fibonacci(x: i32) -> i32 {
+    if x == 0 {
+        return 0;
+    } else if x == 1 {
+        return 1;
+    }
+
+    let mut prev = 0;
+    let mut curr = 1;
+
+    for _ in 2..=x {
+        let next = prev + curr;
+        prev = curr;
+        curr = next;
+    }
+
+    curr
+}
+
+
+}
